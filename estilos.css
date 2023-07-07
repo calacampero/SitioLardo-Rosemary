@@ -1,0 +1,135 @@
+
+*{margin : 0 ; padding: 0}
+
+header { text-align: center; justify-content: center; align-items: center;
+    background-image: url('logo.jpg'); background-size : 100% auto;
+    background-repeat : no-repeat ; background-position: center ; padding: 0px}
+
+.lardorosemary{padding: 100px}
+
+body { font-family: 'EB Garamond', serif; background-color: rgb(0, 0, 0); 
+    color: white } 
+
+nav {display: flex; justify-content: center; align-items: center }
+
+.icono{display: none}
+
+nav a {color :rgb(255, 255, 255); font-size: 40px; margin: 20px ; 
+        text-decoration: none}
+nav a:hover {color :rgb(160, 157, 157)}
+nav a.marca{display: inline-block; margin : 40px}
+nav a.marca em{display: block ; font-size: 20px;}
+
+a { color: white; justify-content: center; align-items: center }
+
+section {text-align: center; background-color: rgb(0, 0, 0);
+    color: rgb(251, 250, 250); padding : 20px 20px 20px 20px; font-size: 25px }
+
+section a {text-decoration: none; font-size: 20px; margin: auto; 
+            text-align: center; justify-content: center; align-items: center}
+
+section a:hover{ color :rgb(160, 157, 157) }
+
+.cajapublicidad{text-align: center; border: solid 1.5px; border-color: white ; border-radius: 10px; padding: 10px; width: 80%; margin:auto; margin-top:20px ;}
+.anuncio{width:728px; height: 90px; margin: 10px auto; display: block; background-color: white ; border-radius: 10px;}
+
+footer{text-align: center; }
+footer a{text-decoration: none;}
+footer a:hover{color :rgb(160, 157, 157)}
+
+.logo-img{width: 50%; margin: 0; padding: 0}
+
+.foto-img{width:100%; margin: 0; padding: 0}
+
+.cajacontenedora {display:flex; justify-content: center; align-items: center}
+
+.cajacontenedora div {width: 33.3%; border-radius: 20px}
+
+.cajamenu{display:flex; flex-flow: wrap; justify-content: center; align-items: center; margin: auto}
+
+.cajamenu div{width: 33.3%}
+
+.cajareservas{display:flex; flex-flow: wrap; justify-content: center; align-items: center; margin: auto}
+
+.cajareservas div{width: 33.3%}
+input {border : 2px solid rosybrown ; padding :  6px ; border-radius :6px ;margin:3px} 
+
+input[type=submit]:hover{background-color :rgb(112, 110, 110)} 
+
+.cajacontacto{display:flex; flex-flow: wrap; justify-content: center; align-items: center; margin: auto}
+
+.cajacontacto div{width: 33.3%}
+form strong {display : none ; color : black }
+
+.cajaubicacion{display:flex; flex-flow: wrap; justify-content: center; align-items: center; margin: auto}
+
+.cajaubicacion div{width: 33.3%}
+
+.mapa{width:100%; height:470px}
+
+.mySlides, .mySlides1{width: 100%;}
+
+
+
+.publicidad {max-width: 728px; max-height: 90px; display: block; margin: auto; }
+.publicidad{display: flex; text-align: center; align-items: center;} 
+.logo-anuncio {width: 110px; height: 110px; }
+.btnpubli {border: solid 1.5px; padding: 5px; margin: 10px ;
+     display:inline-block; justify-content: center; align-items: center; 
+     border-radius: 10px; background-color: hwb(0 74% 5%)} 
+.publicidad a:hover{background-color :hwb(0 87% 0%)}
+.texto-anuncio{display:flex; justify-content: center; align-items: center;  }
+.publicidad div{display:block ; font-size: 15px;}
+.publicidad h2{font-size: 17px ; margin: 7px; }
+
+@media (max-width :727px) {
+    .anuncio{ width:300px; height: 250px} 
+    .publicidad { display:block}}
+
+@media(max-width: 480px) {  
+
+
+    nav { display: block}
+    nav a { font-size: 25px; margin: 10px ; display: none }
+    nav a.marca{ margin : 10}
+    nav a.marca em{display: block ; font-size: 15px;}
+    .icono{display: block; text-align: right; position: absolute; top: 40px ; right: 10px}
+    
+
+    nav.responsive a {display: block}
+    section {font-size: 15px}
+    section a {font-size: 15px}
+
+    .textonosotros{ margin-top: -250px; margin-bottom: 210px}
+    .cajacontenedora{position : relative}
+    .cajacontenedora {display:block ; flex-flow: wrap; margin:auto}
+    .cajacontenedora .textonosotros {border-radius: 20px; background-color: #60645c87;}
+    .cajacontenedora div { width: 96% }
+
+    .cajamenu .textomenu{border-radius: 20px; position: absolute; top: 15%;
+         background-color: #60645c87; width: 60%; margin: 15% 20%; left: 0}
+    .cajamenu{position : relative}
+    .cajamenu {display:block ; flex-flow: wrap; margin:auto}
+    .cajamenu div { width: 96% }
+
+    .cajareservas .textoreservas{border-radius: 20px; position: absolute; top: 15%; 
+        background-color: #60645c87; width: 60%; margin: 10% 20%; left: 0}
+    .cajareservas{position : relative}
+    .cajareservas {display:block ; flex-flow: wrap; margin:auto}
+    .cajareservas div { width: 96% }
+
+    .cajacontacto .textocontacto{border-radius: 20px; position: absolute; top: 15%; 
+        background-color: #60645c87; width: 60%; margin: 0% 20%; left: 0;}
+    .cajacontacto{position : relative}
+    .cajacontacto {display:block ; flex-flow: wrap; margin:auto}
+    .cajacontacto div { width: 96% }
+
+    .cajaubicacion .textoubicacion{border-radius: 20px; position: absolute; top: 15%; 
+        background-color: #00000087; width: 60%; margin: 10% 20%; left: 0}
+    .cajaubicacion{position : relative}
+    .cajaubicacion {display:block ; flex-flow: wrap;margin:auto }
+    .cajaubicacion div { width: 96% }
+    
+    .mapa{width: 100%; height:400px ; display: block;}
+} 
+    

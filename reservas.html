@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Lardo & Rosemary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link href="lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header> 
+        <nav id="navegador" class=" ">
+            <a href="javascript:void(0);" class="icono" onclick="myFunction()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <a href="menu.html"> Menú </a>
+            <a href="reservas.html"> Reservas </a>
+            <a href="index.html" class="marca">  Lardo & Rosemary
+            <em>-Wine & food bar- </em> </a>
+            <a href="contacto.html"> Contacto</a>
+            <a href="ubicacion.html"> Ubicación</a> 
+        </nav>
+    </header>
+
+    <section> 
+    
+        <div class="cajareservas"> 
+            <div>
+                <a href="res2.jpg" data-lightbox="imagen">
+                    <img src="res2-min.jpg" class="foto-img" alt="lardo & Rosemary">
+                    </a>
+            </div>
+            <div class="textoreservas">
+                <h3>RESERVAS</h3>
+                <form action="respuesta.html" method="get">
+                <p> Fecha: <input type="date" name = “fecha” min = “2022-01-30” max= 2022-12-30” required> </p> 
+                <p> <input type="submit" class="boton" name="reservas" value="Reservar" required > </p>
+                </form>
+            </div>
+            <div>
+                <a href="res1.jpg" data-lightbox="imagen">
+                <img src="res1-min.jpg" class="foto-img" alt="lardo & Rosemary">
+                </a>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <div>
+            <a href="presentacion.html"> 
+                <h5>ALUMNA</h5>
+                <p>-Cala Campero-</p>
+                <p>-upcalacampero@gmail.com-</p>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        function myFunction() {
+        var x = document.getElementById("navegador");
+        if (x.className === " ") {
+        x.className += "responsive";
+        } else {
+        x.className = " ";
+        }
+        }
+    </script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
